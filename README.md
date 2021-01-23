@@ -9,11 +9,13 @@ https://covid19-laravel.herokuapp.com/
 
 ## Setup
 
-First get a free API key from [covid-193](https://rapidapi.com/api-sports/api/covid-193) and add it in your `.env` file.
+First run
 ```bash
 git clone ...
-npm install
-npm run prod
+cp .env.exmaple .env
+```
+then get a free API key from [covid-193](https://rapidapi.com/api-sports/api/covid-193) and add it in your `.env` file.
+```
 php artisan key:generate
 ```
 
