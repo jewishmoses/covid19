@@ -10,6 +10,7 @@ class ShowCountryStatistics extends Component
 {
     public $country = 'Israel';
     public $stats;
+    protected $countries;
 
     protected $queryString = [
         'country' => ['except' => ''],
@@ -17,6 +18,12 @@ class ShowCountryStatistics extends Component
 
     public function mount()
     {
+        $this->countries = $this->getCountries();
+
+        if(!in_array($this->country, $this->countries)) {
+            return redirect()->route('home');
+        }
+
         $this->stats = $this->getCountryStats();
     }
 
@@ -46,7 +53,7 @@ class ShowCountryStatistics extends Component
     public function render()
     {
         return view('livewire.show-country-statistics', [
-            'countries' => $this->getCountries(),
+            'countries' => $this->countries,
         ]);
     }
 
