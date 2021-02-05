@@ -32,5 +32,5 @@ jobs:
       env:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
-        RAPID_API_KEY: ${{ secrets.RAPID_API_KEY }} 
-      run: vendor/bin/phpunit
+        RAPID_API_KEY: ${{ secrets.RAPID_API_KEY }}
+      run: php artisan test
