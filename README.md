@@ -1,6 +1,6 @@
 # Covid 19
 
-A simple Laravel based website that display statistics about covid 19.
+A simple Laravel based website that displays statistics about covid 19.
 
 ![Image of https://github.com/jewishmoses/covid19](https://i.imgur.com/sS32IxI.png)
 
