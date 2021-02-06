@@ -2,7 +2,7 @@
 
 A simple Laravel based website that displays statistics about covid 19.
 
-![Image of https://github.com/jewishmoses/covid19](https://i.imgur.com/sS32IxI.png)
+[![Image of https://github.com/jewishmoses/covid19](https://i.imgur.com/sS32IxI.png)](https://covid19-laravel.herokuapp.com/)
 
 ## Demo
 https://covid19-laravel.herokuapp.com/
@@ -25,4 +25,5 @@ php artisan serve
 ```
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+
+[MIT](LICENSE.md)
